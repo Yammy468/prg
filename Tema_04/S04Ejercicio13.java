@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class S04Ejercicio13 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
+    
     System.out.println("Por favor, introduzca tres números enteros por separado: ");
     System.out.print("Valor de a = ");
     int a = s.nextInt();
@@ -42,6 +43,7 @@ public class S04Ejercicio13 {
       System.out.println("Los números introducido y ordenado de menor a mayor queda de la siguente manera " + T + ", " + S + " y "+ P);
       
     } 
+    
     if ((c > b) && (c > a)) { 
       P = c;
       if (a > b) {
