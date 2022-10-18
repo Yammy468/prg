@@ -3,37 +3,59 @@ import java.util.Scanner;
 public class S04Ejercicio13 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
-    
-    int aux;
-        
-    System.out.println("Ordena tres números introducidos por teclado.");
-    System.out.println("Por favor, vaya introduciendo los tres números y pulsando INTRO:");
+    System.out.println("Por favor, introduzca tres números enteros por separado: ");
+    System.out.print("Valor de a = ");
     int a = s.nextInt();
+    System.out.print("Valor de b = ");
     int b = s.nextInt();
+    System.out.print("Valor de c = ");
     int c = s.nextInt();
-
-    // ordenación de los dos primeros números
-    if (a > b) {
-      aux = a;
-      a = b;
-      b = aux;
+    
+    int P;
+    int S;
+    int T;
+    
+    if ((a > b) && (a > c)) {
+      P = a;
+      if (b > c) {
+        S = b;
+        T = c;
+      } else {
+        S = c;
+        T = b;
+      }
+      
+      System.out.println("Los números introducido y ordenado de menor a mayor queda de la siguente manera " + T + ", " + S + " y "+ P);
+      
     }
     
-    // ordenación de los dos últimos números
-    if (b > c) {
-      aux = b;
-      b = c;
-      c = aux;
-    }
+    if ((b > c) && (b > a)) {
+      P = b;
+      if (a > c) {
+        S = a;
+        T = c;
+      } else { 
+        S = c;
+        T = a;
+      }
+      
+      System.out.println("Los números introducido y ordenado de menor a mayor queda de la siguente manera " + T + ", " + S + " y "+ P);
+      
+    } 
+    if ((c > b) && (c > a)) { 
+      P = c;
+      if (a > b) {
+        S = a;
+        T = b;
+      } else {
+        S = b;
+        T = a;
+      }
     
-    // se vuelven a ordenar los dos primeros
-    if (a > b) {
-      aux = a;
-      a = b;
-      b = aux;
+      System.out.println("Los números introducido y ordenado de menor a mayor queda de la siguente manera " + T + ", " + S + " y "+ P);
+    
     }
-        
-    System.out.println("Los números introducidos ordenados de menor a mayor son " + a + ", " + b + " y " + c + "."); 
+     
   }
 }
     
