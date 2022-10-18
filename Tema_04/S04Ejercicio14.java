@@ -6,18 +6,19 @@ public class S04Ejercicio14 {
     
     System.out.print("Por favor, introduzca un número entero: ");
     int n = s.nextInt();
-
+    
     if ((n % 2) == 0) {
-      System.out.print("El número introducido es par");
+      System.out.println("El número introducido es par");
     } else {
-      System.out.print("El número introducido es impar");
+      System.out.println("Lo siento, el número introducido es impar");
     }
-
+    
     if ((n % 5) == 0) {
-      System.out.println(" y divisible entre 5.");
+      System.out.println("El número introducido es divisible entre 5");
     } else {
-      System.out.println(" y no es divisible entre 5.");
+      System.out.println("Lo siento, el número introducido no es divisible entre 5");
     }
+     
   }
 }
     
