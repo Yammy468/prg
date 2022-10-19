@@ -4,32 +4,31 @@ public class S04Ejercicio18 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
-   int n, primera = 0;
+    System.out.print("Por favor, introduzca un número entero (se permite hasta 5 dígitos): ");
+    int numero = s.nextInt();
     
-    System.out.print("Introduzca un número entero positivo (5 cifras como máximo): ");
-    n = s.nextInt();
-    
-    if ( n < 10 ) {
-      primera = n;
+    if (numero <10) {
+      int primera = numero;
+      System.out.println("La primera cifra es " + primera);
     }
     
-    if (( n >= 10 ) && ( n < 100 )) {
-      primera = n / 10;
+    if ((numero > 10) && (numero < 100)) {                                            
+      int primera = numero / 10;
+      System.out.println("La primera cifra es " + primera);
     }
     
-    if (( n >= 100 ) && ( n < 1000 )) {
-      primera = n / 100;
+    if ((numero > 100) && (numero < 1000)) {                                            
+      int primera = numero / 100;
+      System.out.println("La primera cifra es " + primera);
     }
-    
-    if (( n >= 1000 ) && ( n < 10000 )) {
-      primera = n / 1000;
+    if ((numero > 1000) && (numero < 10000)) {                                            
+      int primera = numero / 1000;
+      System.out.println("La primera cifra es " + primera);
     }
-    
-    if ( n >= 10000 ) {
-      primera = n / 10000;
+    if ((numero > 10000) && (numero < 100000)) {                                            
+      int primera = numero / 10000;
+      System.out.println("La primera cifra es " + primera);
     }
-    
-    System.out.println("La primera cifra del número introducido es el " + primera + ".");
   }
 }
     
