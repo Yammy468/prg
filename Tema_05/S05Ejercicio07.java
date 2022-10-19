@@ -4,29 +4,21 @@ public class S05Ejercicio07 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
-    int intentos = 4;
-    int numeroIntroducido;
-    boolean acertado = false;
-    
+    int oportunidad = 4;
+
     do {
-      System.out.print("Introduzca la clave de la caja fuerte: ");
-      numeroIntroducido = Integer.parseInt(System.console().readLine());
-      
-      if (numeroIntroducido == 8888) {
-        acertado = true;
+    System.out.print("Por favor, introduzca la contraseña(4 cifras): ");
+    int contraseña = s.nextInt();
+    
+      if (contraseña == 4680) {
+        System.out.println("La caja furte se ha abierto satisfactoriamente");
+        oportunidad -= 4;
       } else {
-        System.out.println("Clave incorrecta");
+        System.out.println("Lo siento, esa no es combinación");
+        oportunidad --;
       }
       
-      intentos--;
-  
-    } while((intentos > 0) && (!acertado));
-    
-    if (acertado) {
-      System.out.println("Ha abierto la caja fuerte.");
-    } else {
-      System.out.println("Lo siento, ha agotado las 4 oportunidades.");
-    }
+    } while (oportunidad > 0);
     
    }
   }
