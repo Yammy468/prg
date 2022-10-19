@@ -37,7 +37,7 @@ public class S04Ejercicio22 {
     System.out.print("Minutos: ");
     int minutos = s.nextInt();
     
-    int minutosTotales = (4 * 24 * 60) + (15 * 60);
+    int minutosTotales = (5 * 24 * 60) + (15 * 60);
     int minutosActuales = (diaNumerico * 24 * 60) + (horas * 60) + minutos;
     int minutosRestantes = minutosTotales - minutosActuales;
     
