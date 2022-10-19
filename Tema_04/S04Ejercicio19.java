@@ -4,35 +4,32 @@ public class S04Ejercicio19 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
-     int n, digitos = 0;
+    System.out.print("Por favor, introduzca un número entero (se permite hasta 5 dígitos): ");
+    int numero = s.nextInt();
     
-    System.out.print("Por favor, introduzca un número entero (5 cifras como máximo): ");
-    n = Math.abs(Integer.parseInt(System.console().readLine()));
-    
-    if (n < 10) {
-      digitos = 1;
+    if (numero < 10) {
+      int digito = 1;
+      System.out.println("Tiene " + digito + " dígito");
     }
     
-    if ((n >= 10) && (n < 100)) {
-      digitos = 2;
+    if ((numero >= 10) && (numero < 100)) {                                            
+      int digito = 2;
+      System.out.println("Tiene " + digito + " dígitos");
     }
     
-    if ((n >= 100) && (n < 1000)) {
-      digitos = 3;
+    if ((numero >= 100) && (numero < 1000)) {                                            
+      int digito = 3;
+      System.out.println("Tiene " + digito + " dígitos");
     }
     
-    if ((n >= 1000) && (n < 10000)) {
-      digitos = 4;
+    if ((numero >= 1000) && (numero < 10000)) {                                            
+      int digito = 4;
+      System.out.println("Tiene " + digito + " dígitos");
     }
     
-    if (n >= 10000) {
-      digitos = 5;
-    }
-    
-    if (digitos == 1) {
-      System.out.println("El número introducido tiene 1 dígito.");
-    } else {
-      System.out.println("El número introducido tiene " + digitos + " dígitos.");
+    if ((numero >= 10000) && (numero < 100000)) {                                            
+      int digito = 5;
+      System.out.println("Tiene " + digito + " dígitos");
     }
    }
   }
