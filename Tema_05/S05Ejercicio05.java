@@ -1,4 +1,4 @@
-impor½t java.util.Scanner;
+import java.util.Scanner;
 
 public class S05Ejercicio05 {
   public static void main(String[] args) {
