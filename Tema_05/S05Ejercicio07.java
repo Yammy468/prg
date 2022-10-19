@@ -11,7 +11,7 @@ public class S05Ejercicio07 {
     int contraseña = s.nextInt();
     
       if (contraseña == 4680) {
-        System.out.println("La caja furte se ha abierto satisfactoriamente");
+        System.out.println("La caja fuerte se ha abierto satisfactoriamente");
         oportunidad -= 4;
       } else {
         System.out.println("Lo siento, esa no es combinación");
