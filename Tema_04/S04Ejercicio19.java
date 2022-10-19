@@ -5,7 +5,7 @@ public class S04Ejercicio19 {
     Scanner s = new Scanner(System.in);
     
     System.out.print("Por favor, introduzca un número entero (se permite hasta 5 dígitos): ");
-    int numero = s.nextInt();
+    int numero = Math.abs(s.nextInt());
     
     if (numero < 10) {
       int digito = 1;
