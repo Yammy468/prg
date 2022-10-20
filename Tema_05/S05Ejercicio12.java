@@ -17,14 +17,14 @@ public class S05Ejercicio12 {
         break;
       default:
         System.out.print("0 1");
-        int f1 = 0;
-        int f2 = 1;
-        int aux;
+        int n1 = 0;
+        int n2 = 1;
+        int n3;
         while(n > 2) {
-          aux = f1;
-          f1 = f2;
-          f2 = aux + f2;
-          System.out.print(" " + f2);
+          n3 = n1;
+          n1 = n2;
+          n2 = n3 + n2;
+          System.out.print(" " + n2);
           n--;
         }
     }
