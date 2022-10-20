@@ -4,18 +4,15 @@ public class S05Ejercicio09 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
-    System.out.print("Introduzca un número entero y le diré cuántos dígitos tiene: ");
-    long numeroIntroducido = s.nextLong();
+    System.out.print("Por favor, introduzca un número entero: ");
+    long numero = s.nextLong();
+    int digito = 1;
     
-    long n = numeroIntroducido;
-    int numeroDeDigitos = 1;
-    
-    while (n > 10) {
-      numeroDeDigitos++;
-      n /= 10;
+    while (numero > 10) {
+      numero /= 10;
+      digito ++;
     }
-    
-    System.out.println(numeroIntroducido + " tiene " + numeroDeDigitos + " dígito/s.");
-    
+    System.out.printf("El número introducido tiene " + digito + " digitos");
+     
    }
   }
