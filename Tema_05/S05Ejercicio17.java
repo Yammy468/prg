@@ -6,24 +6,21 @@ public class S05Ejercicio17 {
     
     int numeroIntroducido = 0;
     
-    do {
-      System.out.print("Introduzca un número entero positivo: ");
-      numeroIntroducido = s.nextInt();
-      
-      if(numeroIntroducido < 0) {
-        System.out.print("El número introducido no es correcto,");
-        System.out.println(" debe introducir un número positivo.");
+    System.out.print("Introduzca un número entero positivo: ");
+    numeroIntroducido = s.nextInt();
+    
+    while (numeroIntroducido < 0) {
+      if (numeroIntroducido < 0) {
+        System.out.println("Lo siento, el número introducido debe ser positivo");
       }
-    } while (numeroIntroducido < 0);
+    } 
     
     int suma = 0;
-    
-    for(int i = numeroIntroducido; i < numeroIntroducido + 100; i++) {
+    for (int i = numeroIntroducido; i < numeroIntroducido +100; i++) {
       suma += i;
     }
-
-    System.out.print("La suma de los 100 números siguientes a ");
-    System.out.println(numeroIntroducido + " es " + suma + ".");
+    
+    System.out.println("La suma de los 100 números siguientes a " + numeroIntroducido + " es " + suma + ".");
     
    }
   }
