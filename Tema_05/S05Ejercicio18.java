@@ -7,27 +7,26 @@ public class S05Ejercicio18 {
     int primerNumero;
     int segundoNumero;
     
-    // pide dos números y se verifica que sean distintos
+    // cuando los núemros pedido sean distintos
     do {
-      System.out.print("Introduzca un número entero: ");
-      primerNumero = s.nextInt();
-      System.out.print("Introduzca otro número entero distinto al anterior: ");
-      segundoNumero = s.nextInt();
-      
-      if(primerNumero == segundoNumero) {
-        System.out.print("Los números introducidos no son válidos, ");
-        System.out.println(" deben ser distintos.");
+    System.out.print("Introduzca el primer número entero: ");
+    primerNumero = s.nextInt();
+    System.out.print("Acontinuación, introduzca el segundo número: ");
+    segundoNumero = s.nextInt();
+    
+      if (primerNumero == segundoNumero) {
+        System.out.println("Lo siento, los números introducidos no son válidos");
       }
     } while (primerNumero == segundoNumero);
     
-    // si el primer número es mayor que el segundo, se intercambian los valores
+    // cuando el primer numero es mayor que el segundo
     if (primerNumero > segundoNumero) {
-      int aux = primerNumero;
+      int cambio = primerNumero;
       primerNumero = segundoNumero;
-      segundoNumero = aux;
+      segundoNumero = cambio;
     }
     
-    for(int i = primerNumero; i <= segundoNumero; i += 7) {
+    for (int i = primerNumero; i <= segundoNumero; i +=7) {
       System.out.print(i + " ");
     }
     
