@@ -20,9 +20,9 @@ public class S05Ejercicio32 {
       volteado = (volteado * 10) + (numero % 10);
       numero /= 10;
       longitud++;
-    } // while
+    } 
 
-    // Muestra los dígitos pares
+    // Los dígitos pares
     System.out.print("Dígitos pares: ");
 
     int digito;
@@ -40,8 +40,9 @@ public class S05Ejercicio32 {
       volteado /= 10;
     }
     
-    // Muestra la suma de los dígitos pares
+    // Suma de los dígitos pares
     System.out.println("\nSuma de los dígitos pares: " + sumaPares);
+    
     
     }
   }
