@@ -10,10 +10,8 @@ public class S05Ejercicio26 {
     System.out.print("Introduzca un dígito: ");
     int digito = s.nextInt();
 
-    System.out.print("Contando de izquierda a derecha, el " + digito);
-    System.out.println(" aparece dentro de " + numeroIntroducido);
-    System.out.print("en las siguientes posiciones: ");
-    
+    System.out.print("Contando de izquierda a derecha, el " + digito + " aparece dentro de " + numeroIntroducido + "en la(s) posicion(es): ");
+        
     // se hace una copia del número introducido
     long numero = numeroIntroducido;
     
@@ -35,7 +33,7 @@ public class S05Ejercicio26 {
       volteado = (volteado * 10) + (numero % 10);
       numero /= 10;
       longitud++;
-    } // while
+    } 
         
     // comprueba la posición
     while (volteado != 1) {
@@ -44,9 +42,10 @@ public class S05Ejercicio26 {
       }
       volteado /= 10;
       posicion++;
-    } // while
+    } 
 
     System.out.println();
+    
     
    }
   }
