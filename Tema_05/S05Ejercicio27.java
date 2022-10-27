@@ -4,7 +4,7 @@ public class S05Ejercicio27 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
-    System.out.print("Introduzca un número entero mayor que 1: ");
+    System.out.print("Introduzca un número entero (mayor que 1): ");
     int numeroIntroducido = s.nextInt();
 
     int cuenta = 0;
@@ -18,8 +18,7 @@ public class S05Ejercicio27 {
       }
     }
         
-    System.out.print("\nDesde 1 hasta " + numeroIntroducido + " hay " + cuenta);
-    System.out.println(" múltiplos de 3 y suman " + suma + ".");
+    System.out.print("\nDesde 1 hasta " + numeroIntroducido + " hay " + cuenta + " múltiplos de 3 y suman " + suma + ".");
     
    }
   }
