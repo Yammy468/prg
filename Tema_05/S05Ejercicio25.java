@@ -15,8 +15,7 @@ public class S05Ejercicio25 {
       numero /= 10;
     } // while
     
-    System.out.print("Si le damos la vuelta al " + numeroIntroducido);
-    System.out.println(" tenemos el " + volteado + ".");
+     System.out.println("Si le damos la vuelta al " + numeroIntroducido + " tenemos el " + volteado + ".");
     
    }
   }
