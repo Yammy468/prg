@@ -14,7 +14,7 @@ public class S05Ejercicio24 {
     
     while (altura <= alturaIntroducida) {
       
-      // inserta espacios
+      // espacios
       for (i = 1; i <= espacios; i++) {
         System.out.print(" ");
       }
