@@ -10,8 +10,7 @@ public class S05Ejercicio29 {
     System.out.print("Introduzca otro número (relativamente pequeño): ");
     int numeroPequeno = s.nextInt();
 
-    System.out.print("Los números enteros positivos menores que " + numeroGrande );
-    System.out.println(" que no son divisibles entre " + numeroPequeno + " son los siguientes:");
+    System.out.println("Los números enteros positivos menores que " + numeroGrande + " que no son divisibles entre " + numeroPequeno + " son los siguientes:");
 
     int cuenta = 0;
     int suma = 0;
