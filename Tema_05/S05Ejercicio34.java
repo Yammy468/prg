@@ -4,14 +4,14 @@ public class S05Ejercicio34 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
-    // Lectura de dos números por teclado //////////////////////////////////////
+    // Lectura de dos números por teclado 
     System.out.print("Por favor, introduzca un número: ");
     long numeroIntroducido1 = s.nextLong();
 
     System.out.print("Introduzca otro número: ");
     long numeroIntroducido2 = s.nextLong();
 
-    // Voltea el primer número y calcula la longitud ///////////////////////////
+    // Voltea el primer número y calcula la longitud 
     // Se da por hecho que los dos números introducidos tienen la misma longitud.
     long numero = numeroIntroducido1;
     long volteado1 = 0;
@@ -25,18 +25,18 @@ public class S05Ejercicio34 {
       volteado1 = (volteado1 * 10) + (numero % 10);
       numero /= 10;
       longitud++;
-    } // while
+    } 
 
-    // Voltea el segundo número ////////////////////////////////////////////////
+    // Voltea el segundo número 
     numero = numeroIntroducido2;
     long volteado2 = 0;
     
     while (numero > 0) {
       volteado2 = (volteado2 * 10) + (numero % 10);
       numero /= 10;
-    } // while
+    } 
 
-    // Recorre los dos números volteados para formar los dos resultados ////////
+    // Recorre los dos números volteados para formar los dos resultados 
     long resultadoPares = 0;
     long resultadoImpares = 0;
     int digito;
@@ -63,7 +63,6 @@ public class S05Ejercicio34 {
       volteado2 /= 10;
     }
     
-    // Muestra el resultado ////////////////////////////////////////////////////
     System.out.println("El número formado por los dígitos pares es: " + resultadoPares);
     System.out.println("El número formado por los dígitos impares es: " + resultadoImpares);
     
