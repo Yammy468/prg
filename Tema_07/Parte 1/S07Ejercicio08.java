@@ -20,7 +20,7 @@ public class S07Ejercicio08 {
           
     for (i = 0; i < 12; i++) {
       System.out.print("Introduzca la temperatura media de " + mes[i] + ": ");
-      temperatura[i] = Integer.parseInt(System.console().readLine());
+      temperatura[i] = s.nextInt();
     }
 
     System.out.println();
