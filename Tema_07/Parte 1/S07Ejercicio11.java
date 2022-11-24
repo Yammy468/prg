@@ -17,7 +17,7 @@ public class S07Ejercicio11 {
     for(i = 0; i < 10; i++) {
       n[i] = s.nextInt();
       esPrimo = true;
-      for (j = 2; j < n[i] - 1; j++) {
+      for (j = 2; j < n[i]; j++) {
         if (n[i] % j == 0) {
           esPrimo = false;
         }
