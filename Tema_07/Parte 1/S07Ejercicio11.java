@@ -35,45 +35,55 @@ public class S07Ejercicio11 {
       }
     }
     
-    // Muestra el array original
-    System.out.println("\n\nArray original:");
-    System.out.println("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
-    System.out.print("│ Índice ");
+    System.out.println("\n\nArray original:\n");
+
+    System.out.print(" Índice ");
     for (i = 0; i < 10; i++) {
       System.out.printf("│%4d ", i);
     }
-    System.out.println("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");
-    System.out.print("│ Valor  ");
+    System.out.println("|");
+    
+    for(i = 0; i< 75; i++) {
+      System.out.print("-");
+    }
+    System.out.println("-");
+    
+    System.out.print(" Valor  ");
     for (i = 0; i < 10; i++) {
       System.out.printf("│%4d ", n[i]);
     }
-    System.out.println("│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");
+    System.out.println("│");
     
-    // Los números primos se menten en las primeras
-    // posiciones del array original.
+    // Lo primo
     for (i = 0; i < primos; i++) {
       n[i] = primo[i];
     }
     
-    // Los números que no son primos se colocan al final.
+    // Lo no primo
     for (i = primos; i < primos + noPrimos; i++) {
       n[i] = noPrimo[i - primos];
     }
 
     // Muestra el resultado.
-    System.out.println("\n\nArray con los primos al principio:");
-    System.out.println("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
-    System.out.print("│ Índice ");
+    System.out.println("\n\nArray con los primos al principio:\n");
+    
+    System.out.print(" Índice ");
     for (i = 0; i < 10; i++) {
       System.out.printf("│%4d ", i);
     }
-    System.out.println("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");
-    System.out.print("│ Valor  ");
+    System.out.println("|");
+    
+    for(i = 0; i< 75; i++) {
+      System.out.print("-");
+    }
+    System.out.println("-");
+    
+    System.out.print(" Valor  ");
     for (i = 0; i < 10; i++) {
       System.out.printf("│%4d ", n[i]);
     }
-    System.out.println("│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");
- 
+    System.out.println("│");
+    
   }
 }
 
