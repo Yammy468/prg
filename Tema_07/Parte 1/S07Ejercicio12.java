@@ -18,32 +18,36 @@ public class S07Ejercicio12 {
     }
     
     // Muestra el array original.
-    System.out.println("\n\nArray original:");
-    System.out.println("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
-    System.out.print("│ Índice ");
-    for (i = 0; i < 10; i++) {
-      System.out.printf("│%4d ", i);
+    System.out.println("\nArray INICIAL\n");
+    
+    System.out.print(" Índice ");
+    for(i = 0; i < 10; i++) {
+      System.out.printf("|%4d ", i);
     }
-    System.out.println("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");
-    System.out.print("│ Valor  ");
-    for (i = 0; i < 10; i++) {
-      System.out.printf("│%4d ", n[i]);
+    System.out.println("|");
+    for(i = 0; i < 75; i++) {
+      System.out.print("-");
     }
-    System.out.println("│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");
-
+    System.out.println("-");
+    System.out.print(" Valor  ");
+    for(i = 0; i < 10; i++) {
+      System.out.printf("|%4d ", n[i]);
+    }
+    System.out.println("|");
+    
     // Pide las posiciones inicial y final.
     do {
       valido = true;
       
-      System.out.print("Introduzca la posición inicial (0 - 9): ");
-      nInicial = Integer.parseInt(System.console().readLine());
+      System.out.print("\nIntroduzca la posición inicial (0 - 9): ");
+      nInicial = s.nextInt();
       if ((nInicial < 0) || (nInicial > 9)) {
         System.out.println("Valor incorrecto, debe ser un número entre el 0 y el 9.");
         valido = false;
       }
   
       System.out.print("Introduzca la posición final (0 - 9): ");
-      nFinal = Integer.parseInt(System.console().readLine());
+      nFinal = s.nextInt();
       if ((nFinal < 0) || (nFinal > 9)) {
         System.out.println("Valor incorrecto, debe ser un número entre el 0 y el 9.");
         valido = false;
@@ -56,19 +60,23 @@ public class S07Ejercicio12 {
     } while (!valido);
 
     // Muestra de nuevo el array original.
-    System.out.println("\n\nArray original:");
-    System.out.println("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
-    System.out.print("│ Índice ");
-    for (i = 0; i < 10; i++) {
-      System.out.printf("│%4d ", i);
-    }
-    System.out.println("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");
-    System.out.print("│ Valor  ");
-    for (i = 0; i < 10; i++) {
-      System.out.printf("│%4d ", n[i]);
-    }
-    System.out.println("│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");
+    System.out.println("\n\nArray INICIAL\n");
     
+    System.out.print(" Índice ");
+    for(i = 0; i < 10; i++) {
+      System.out.printf("|%4d ", i);
+    }
+    System.out.println("|");
+    for(i = 0; i < 75; i++) {
+      System.out.print("-");
+    }
+    System.out.println("-");
+    System.out.print(" Valor  ");
+    for(i = 0; i < 10; i++) {
+      System.out.printf("|%4d ", n[i]);
+    }
+    System.out.println("|");
+        
     // Copia el array n en resultado.
     for (i = 0; i < 10; i++) {
       resultado[i] = n[i];
@@ -76,28 +84,31 @@ public class S07Ejercicio12 {
     
     resultado[nFinal] = n[nInicial];
     
-    for (i = nFinal + 1; i < 10; i++)
+    for (i = nFinal + 1; i < 10; i++) {
       resultado[i] = n[i - 1];
-    
+    }
     resultado[0] = n[9];
     
-    for (i = 0; i < nInicial; i++)
+    for (i = 0; i < nInicial; i++) {
       resultado[i + 1] = n[i];
-    
+    }
     // Muestra el resultado.
-    System.out.println("\nArray resultante:");
-    System.out.println("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
-    System.out.print("│ Índice ");
-    for (i = 0; i < 10; i++) {
-      System.out.printf("│%4d ", i);
+    System.out.println("\nArray RESULTADO\n");
+    
+    System.out.print(" Índice ");
+    for(i = 0; i < 10; i++) {
+      System.out.printf("|%4d ", i);
     }
-    System.out.println("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");    
-    System.out.print("│ Valor  ");
-    for (i = 0; i < 10; i++) {
-      System.out.printf("│%4d ", resultado[i]);
+    System.out.println("|");
+    for(i = 0; i < 75; i++) {
+      System.out.print("-");
     }
-    System.out.println("│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");  
-  
+    System.out.println("-");
+    System.out.print(" Valor  ");
+    for(i = 0; i < 10; i++) {
+      System.out.printf("|%4d ", resultado[i]);
+    }
+    System.out.println("|");
   }
 }
 
