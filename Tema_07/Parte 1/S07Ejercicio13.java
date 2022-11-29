@@ -4,49 +4,49 @@ public class S07Ejercicio13 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
+    String verde = "\033[32m";
+    String blanco = "\033[37m";
     int[] n = new int[100];
+    int i;
     int maximo = 0;
     int minimo = 100;
-
-    // Genera los números y calcula el máximo y el mínimo
-    for (int i = 0; i < 100; i++) {
-      n[i] = (int)(Math.random() * 501);
-      
-      if (n[i] < minimo) {
+    
+    for(i = 0; i < 100; i++) {
+      n[i] = (int)(Math.random()*501);
+      if(n[i] < minimo) {
         minimo = n[i];
-      }
-      
-      if (n[i] > maximo)  {
+      } 
+      if(n[i] > maximo) {
         maximo = n[i];
       }
     }
-
-    // Muestra el array original
-    for (int elemento : n) {
-      System.out.print(elemento + " ");
-    }
     
-    System.out.print("\n\n¿Qué quiere destacar? (1 – mínimo, 2 – máximo): ");
-    int opcion = Integer.parseInt(System.console().readLine());
-
-    int destacado; // número que se va a destacar del resto
-    
-    if (opcion == 1) {
-      destacado = minimo;
-    } else {
-      destacado = maximo;
+    for(i = 0; i < 100; i++) {
+      System.out.print(n[i] + " ");
     }
-
     System.out.println();
-
-    // Muestra el resultado.
-    for (int elemento : n) {
-      if (elemento == destacado) {
-        System.out.print(" **" + elemento + "** ");
+    
+    System.out.print("\n¿Qué quiere destacar? (1- mínimo, 2- máximo): ");
+    int numero = s.nextInt();
+    
+    // destacar
+    int destacar;
+    
+    if(numero == 1) {
+      destacar = minimo;
+    } else {
+      destacar = maximo;
+    }
+    
+    // resultado
+    for(i = 0; i < 100; i++) {
+      if(n[i] == destacar) {
+        System.out.print(verde + " **" + n[i] + "** " + blanco);
       } else {
-        System.out.print(elemento + " ");
+        System.out.print(blanco + n[i] + " ");
       }
     }
+    System.out.println();
       
   }
 }
