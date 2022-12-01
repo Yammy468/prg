@@ -27,9 +27,11 @@ public class S072Ejercicio07 {
     cuadrante[minaX][minaY] = MINA;
     
     // Colocacion del tesoro
-    int tesoroX = (int)(Math.random()*4);
-    int tesoroY = (int)(Math.random()*3);
+    int tesoroX;
+    int tesoroY;
     do {
+    tesoroX = (int)(Math.random()*4);
+    tesoroY = (int)(Math.random()*3);
     } while((minaX == tesoroX) && (minaY == tesoroY));
     cuadrante[tesoroX][tesoroY] = TESORO;
     
