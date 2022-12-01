@@ -2,53 +2,60 @@ import java.util.Scanner;
 
 public class S072Ejercicio04 {
   public static void main(String[] args) 
-  throws InterruptedException { // Se añade esta línea para poder usar sleep
- 
-    int[][] num = new int[4][5]; // array de 4 filas por 5 columnas
-
-    int fila;
-    int columna;
+  throws InterruptedException {
+    Scanner s = new Scanner(System.in);
     
-    // Introduce valores aleatorios en el array
+    int[][] n = new int[4][5];
+    int fila, columna;
+    int sumaFila;
+    int sumaColumna;
+    
+    // datos
+    System.out.println("TABLA con valores entre 100 y 999.");
+    
     for(fila = 0; fila < 4; fila++) {
       for(columna = 0; columna < 5; columna++) {
-        num[fila][columna] = (int)(Math.random() * 900) + 100;
+        n[fila][columna] = (int)(Math.random()*899+100);
       }
     }
-
-    // Muestra los datos y las sumas parciales de las filas
-    int sumaFila;
+    System.out.println();
+    
+    // tabla
+    System.out.print("        ");
+    for(columna = 0; columna < 5; columna++) {
+      System.out.print("  Columna " + columna);
+    }
+    System.out.print(" | Total");
+    
+    // suma de filas
     for(fila = 0; fila < 4; fila++) {
+      System.out.print("\nFila " + fila);
       sumaFila = 0;
       for(columna = 0; columna < 5; columna++) {
-        System.out.printf("%7d   ", num[fila][columna]);
-        sumaFila += num[fila][columna];
-        Thread.sleep(100);
+        System.out.printf("%9d  ", n[fila][columna]);
+        sumaFila += n[fila][columna];
       }
-      System.out.printf("|%7d\n", sumaFila);
-      Thread.sleep(500);
+      System.out.printf("   |");
+      Thread.sleep(1500);
+      System.out.printf("%6d", sumaFila);
     }
+    System.out.println("\n------------------------------------------------------------------------");
+    System.out.print("Total ");
     
-    // Muestra las sumas parciales de las columnas
-    for(columna = 0; columna < 5; columna++) {
-      System.out.print("----------");
-    }
-    System.out.println("-----------");
-
-    int sumaColumna;
+    // suma de columnas y total
     int sumaTotal = 0;
-    
     for(columna = 0; columna < 5; columna++) {
       sumaColumna = 0;
       for(fila = 0; fila < 4; fila++) {
-        sumaColumna += num[fila][columna];
+        sumaColumna += n[fila][columna];
       }
-
       sumaTotal += sumaColumna;
-      System.out.printf("%7d   ", sumaColumna);
-      Thread.sleep(500);
+      Thread.sleep(1500);
+      System.out.printf("%9d  ", sumaColumna);
     }
-    System.out.printf("|%7d   ", sumaTotal);
+    System.out.printf("   |");
+    Thread.sleep(2500);
+    System.out.printf("%6d  ", sumaTotal);
     
    }
   }
