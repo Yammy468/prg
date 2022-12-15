@@ -15,6 +15,7 @@ public class Cadenas06 {
   /** 
    * Añadir espacios delante (padLeft) y detrás (padRight) de una cadena de palabra.
    * 
+   * @param x es el car
    * @param n es un entero
    * @return el espacio añadido  
    * */
