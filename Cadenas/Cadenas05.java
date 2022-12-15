@@ -8,8 +8,8 @@ public class Cadenas05 {
     System.out.println("\nAcontinuación introduzca un número entero: ");
     int entero = s.nextInt();
     
-    repiteCaracter(caracter, entero);
-    
+    System.out.println("\nRepetir Carácter ('" + caracter + ", " + entero + "') = '" + repiteCaracter(caracter, entero) + "'");
+ 
   }
   
   /** 
@@ -21,19 +21,9 @@ public class Cadenas05 {
    * */
    
   public static String repiteCaracter(String x, int n) {
-    int i;
-    
-    String letra = "";
-    for(i = 0; i < x.length(); i++) {
-      letra += x.charAt(i);
-      for(i = 0; i < n; i++) {
-      }
-      System.out.println("\nRepetir Carácter ('" + letra + "', " + n + ") = '" + letra.repeat(n) + "'");
-    }
-     return letra.repeat(n);
+
+    return x.repeat(n);
     
   }
   
 }
-  
-
