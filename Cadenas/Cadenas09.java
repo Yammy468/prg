@@ -25,22 +25,8 @@ public class Cadenas09 {
    
   public static String sustituyeCaracter(String x, String s1, String s2) {
     
-    String oracion = "";
-    for(int i = 0; i < x.length(); i++) {
-      oracion += x.charAt(i);
-    }
-    
-    String nuevo = "";
-    for(int i = 0; i < s1.length(); i++) {
-      for(i = 0; i < s2.length(); i++) {
-        nuevo = oracion.replace(s1, s2);
-      }    
-    }
-    
-    return nuevo;
+    return x.replace(s1, s2);
     
   }
   
 }
-  
-
