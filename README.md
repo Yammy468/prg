@@ -3,8 +3,12 @@
 
 ```mermaid
   graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
+      Animal-->Perro;
+      Animal-->Gato;
+      Animal-->Caballo;
+      Perro-->Goofy;
+      Perro-->Milu;
+      Perro-->Snoopy;
+      Perro-->Pluto;
+      Perro-->Laika;
 ```
