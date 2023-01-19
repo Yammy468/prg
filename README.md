@@ -11,4 +11,10 @@
       Perro-->Snoopy;
       Perro-->Pluto;
       Perro-->Laika;
+      Gato-->Garfield;
+      Gato-->Tom;
+      Gato-->Silvestre;
+      Caballo-->Rocinante;
+      Caballo-->Bucefalo;
+      Caballo-->Pegaso;
 ```
