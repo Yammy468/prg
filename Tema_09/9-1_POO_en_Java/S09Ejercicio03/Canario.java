@@ -1,3 +1,7 @@
+/**
+ * Canario.java
+ */
+
 public class Canario extends Ave {
     
     public Canario(String n, int e, Sexo s) {
