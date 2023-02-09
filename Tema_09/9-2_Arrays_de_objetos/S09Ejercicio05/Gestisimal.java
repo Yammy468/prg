@@ -68,7 +68,7 @@ public class Gestisimal {
                 }
 
                 if(primeraLibre == 50) {
-                    System.out.println("Lo siento, el disco esta lleno.");
+                    System.out.println("Lo siento, la base de datos esta lleno.");
                 } else {
                     System.out.println("Por favor, a continuación, introduzca los datos del nuevo artículos.");
                     System.out.print("CÓDIGO: ");
