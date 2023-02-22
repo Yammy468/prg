@@ -17,7 +17,7 @@ public class S10Ejercicio03 {
             numero.add(s.nextInt());
         }
         
-        System.out.println("\nLista de númro sin ordenar:" + numero);
+        System.out.println("\nLista de número sin ordenar:" + numero);
 
         Collections.sort(numero);
 
