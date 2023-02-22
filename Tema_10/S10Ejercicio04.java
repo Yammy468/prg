@@ -11,7 +11,7 @@ public class S10Ejercicio04 {
         ArrayList<String> palabra = new ArrayList<String>();
         Scanner s = new Scanner(System.in);
  
-        System.out.println("Introduzca 10 palabra enteros separador por ESPACIOS: ");
+        System.out.println("Introduzca 10 palabras enteros separado por ESPACIOS: ");
         for(int i = 0 ; i < 10; i++) {
             palabra.add(s.nextLine());
         }
