@@ -12,7 +12,7 @@ public class S10Ejercicio03 {
         ArrayList<Integer> numero = new ArrayList<Integer>();
         Scanner s = new Scanner(System.in);
 
-        System.out.println("Introduzca 10 números enteros separador por ESPACIOS: ");
+        System.out.println("Introduzca 10 números enteros separado por ESPACIOS: ");
         for(int i = 0 ; i < 10; i++) {
             numero.add(s.nextInt());
         }
