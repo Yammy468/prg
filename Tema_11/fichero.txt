@@ -1,0 +1,8 @@
+Realista
+Impresionista
+Abstracto
+Natural
+Urbano
+Rural
+Onírico
+Fluvial
