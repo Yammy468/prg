@@ -18,8 +18,8 @@ public class S10Ejercicio01 {
         nombre.add("Hector");
 
         System.out.println("Nombre de los 6 compañeros:\n");
-        for(int i = 0; i < nombre.size(); i++) {
-            System.out.println(nombre.get(i));
+        for(String name: nombre) {
+            System.out.println(name);
         }
     }
 }
